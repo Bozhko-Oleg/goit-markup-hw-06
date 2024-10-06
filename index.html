@@ -35,6 +35,7 @@
 
     <header class="page-header">
         <div class="container header-container">
+
             <nav class="header-nav">
 
                 <a class="logo-header" href="./index.html">Web<span class="accent">Studio</span></a>
@@ -53,27 +54,99 @@
                     <li><a class="header-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+
+            <button class="burger-btn" type="button">
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
+
+        <!-- MOBILE MENU -->
+
+        <div class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close">
+                    <svg class="mobile-menu-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-link-list">
+                        <li><a class="mobile-menu-link current" href="./index.html">Studio</a></li>
+                        <li><a class="mobile-menu-link" href="">Portfolio</a></li>
+                        <li><a class="mobile-menu-link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <address class="mobile-menu-address">
+                    <ul class="mobile-contacts-list">
+                        <li><a class="mobile-menu-address-link current-mobile-menu-address-link"
+                                href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li><a class="mobile-menu-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+
+                    </ul>
+                </address>
+
+                <div class="mobile-menu-social-media">
+                    <ul class="social-list-mobile-menu">
+                        <li class="social-list-item">
+                            <a class="social-list-link-footer" href="">
+                                <svg class="instagram-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a class="social-list-link-footer" href="">
+                                <svg class="instagram-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a class="social-list-link-footer" href="">
+                                <svg class="instagram-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a class="social-list-link-footer" href="">
+                                <svg class="instagram-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
     </header>
 
 
     <main>
 
-        <!--Section 1-->
+        <!--Section 1 Hero-->
 
         <section class="section-one">
             <div class="container">
-                <h1 class="main-logo">Effective Solutions <br />
+                <h1 class="main-logo">Effective Solutions
                     for Your Business</h1>
                 <button type="button" class="main-button">Order Service</button>
             </div>
         </section>
 
 
-        <!--Section 2-->
+        <!--Section 2 Goals-->
 
         <section class="section-paddings">
-            <div class="container">
+            <div class="container container-goals">
                 <h2 class="visually-hidden">Goals</h2>
                 <ul class="list-goals">
                     <li class="element-list-goals">
@@ -133,15 +206,17 @@
             </div>
         </section>
 
-        <!-- Section 3 -->
+        <!-- Section 3 Our team-->
 
-        <section class="our-team-section section-paddings">
-            <div class="container">
+        <section class="our-team-section section-paddings ">
+            <div class="container container-our-team">
                 <h2 class="our-team-title">Our Team</h2>
                 <ul class="our-team-list">
 
                     <li class="our-team-photos">
-                        <img src="./images/section_3/img-3.jpg" alt="Mark Guerrero. Product Designer" width="264" />
+                        <img srcset="./images/Retina/mark-guerrero@2x.jpg 2x" src="./images/Retina/mark-guerrero.jpg"
+                            alt="Mark Guerrero. Product Designer" width="264" />
+
                         <div class="our-team-underfoto">
                             <h3 class="our-team-names">Mark Guerrero</h3>
                             <p class="our-team-text">Product Designer</p>
@@ -182,7 +257,8 @@
                         </div>
                     </li>
                     <li class="our-team-photos">
-                        <img src="./images/section_3/img-2.jpg" alt="Tom Ford. Frontend Developer" width="264" />
+                        <img srcset="./images/Retina/tom-ford@2x.jpg 2x" src="./images/Retina/tom-ford.jpg"
+                            alt="Tom Ford. Frontend Developer" width="264" />
                         <div class="our-team-underfoto">
                             <h3 class="our-team-names">Tom Ford</h3>
                             <p class="our-team-text">Frontend Developer</p>
@@ -222,7 +298,8 @@
                         </div>
                     </li>
                     <li class="our-team-photos">
-                        <img src="./images/section_3/img-1.jpg" alt="Camila Garcia. Marketing" width="264" />
+                        <img srcset="./images/Retina/camila-garcia@2x.jpg 2x" src="./images/Retina/camila-garcia.jpg"
+                            alt="Camila Garcia. Marketing" width="264" />
                         <div class="our-team-underfoto">
                             <h3 class="our-team-names">Camila Garcia</h3>
                             <p class="our-team-text">Marketing</p>
@@ -262,8 +339,8 @@
                         </div>
                     </li>
                     <li class="our-team-photos">
-                        <img src="./images/section_3/img.jpg" alt="Daniel Wilson. UI Designer" width="264"
-                            height="260" />
+                        <img srcset="./images/Retina/daniel-wilson@2x.jpg 2x" src="./images/Retina/daniel-wilson.jpg"
+                            alt="Daniel Wilson. UI Designer" width="264" height="260" />
                         <div class="our-team-underfoto">
                             <h3 class="our-team-names">Daniel Wilson</h3>
                             <p class="our-team-text">UI Designer</p>
@@ -307,17 +384,29 @@
         </section>
 
 
-        <!-- Section 4 -->
+        <!-- Section 4 Our portfolio-->
 
 
-        <section class="section-paddings">
-            <div class="container">
+        <section class="section-paddings ">
+            <div class="container container-our-portfolio">
                 <h2 class="our-portfolio-title">Our Portfolio</h2>
                 <ul class="our-portfolio-list">
                     <li class="element-our-portfolio-list">
 
                         <div class="thumb">
-                            <img src="./images/section_4/banking_app.jpg" alt="Banking App" width="360">
+
+                            <picture>
+                                <source
+                                    srcset="./images/Retina/banking-desk.jpg 1x, ./images/Retina/banking-desk@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/Retina/banking-tab.jpg 1x, ./images/Retina/banking-tab@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/Retina/banking-mob.jpg 1x, ./images/Retina/banking-mob@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/Retina/banking-desk.jpg" alt="Banking App" width="360">
+                            </picture>
 
                             <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager App · Calorie Tracker
@@ -334,7 +423,19 @@
                     </li>
                     <li class="element-our-portfolio-list">
                         <div class="thumb">
-                            <img src="./images/section_4/cashless_payment.jpg" alt="Cashless Payment" width="360">
+
+                            <picture>
+                                <source
+                                    srcset="./images/Retina/cashless-payment-desk.jpg 1x, ./images/Retina/cashless-payment-desk@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/Retina/cashless-payment-tab.jpg 1x, ./images/Retina/cashless-payment-tab@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/Retina/cashless-payment-mob.jpg 1x, ./images/Retina/cashless-payment-mob@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/Retina/cashless-payment-desk.jpg" alt="Cashless Payment" width="360">
+                            </picture>
 
                             <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker
@@ -352,7 +453,19 @@
                     <li class="element-our-portfolio-list">
 
                         <div class="thumb">
-                            <img src="./images/section_4/maditation_app.jpg" alt="Meditation App" width="360">
+
+                            <picture>
+                                <source
+                                    srcset="./images/Retina/meditation-app-desk.jpg 1x, ./images/Retina/meditation-app-desk@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/Retina/meditation-app-tab.jpg 1x, ./images/Retina/meditation-app-tab@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/Retina/meditation-app-mob.jpg 1x, ./images/Retina/meditation-app-mob@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/Retina/meditation-app-desk.jpg" alt="Meditation App" width="360">
+                            </picture>
 
                             <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker
@@ -370,7 +483,19 @@
                     <li class="element-our-portfolio-list">
 
                         <div class="thumb">
-                            <img src="./images/section_4/taxi_service.jpg" alt="Taxi Service" width="360">
+
+                            <picture>
+                                <source
+                                    srcset="./images/Retina/taxi-service-desk.jpg 1x, ./images/Retina/taxi-service-desk@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/Retina/taxi-service-tab.jpg 1x, ./images/Retina/taxi-service-tab@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/Retina/taxi-service-mob.jpg 1x, ./images/Retina/taxi-service-mob@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/Retina/taxi-service-desk.jpg" alt="Taxi Service" width="360">
+                            </picture>
 
                             <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker
@@ -387,8 +512,19 @@
                     <li class="element-our-portfolio-list">
 
                         <div class="thumb">
-                            <img src="./images/section_4/screen_illustrations.jpg" alt="Screen Illustrations"
-                                width="360">
+
+                            <picture>
+                                <source
+                                    srcset="./images/Retina/screen-illu-desk.jpg 1x, ./images/Retina/screen-illu-desk@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/Retina/screen-illu-tab.jpg 1x, ./images/Retina/screen-illu-tab@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/Retina/screen-illu-mob.jpg 1x, ./images/Retina/screen-illu-mob@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/Retina/screen-illu-desk.jpg" alt="Screen Illustrations" width="360">
+                            </picture>
 
                             <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker
@@ -406,7 +542,19 @@
                     <li class="element-our-portfolio-list">
 
                         <div class="thumb">
-                            <img src="./images/section_4/online_courses.jpg" alt="Online Courses" width="360">
+
+                            <picture>
+                                <source
+                                    srcset="./images/Retina/online-courses-desk.jpg 1x, ./images/Retina/online-courses-desk@2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <source
+                                    srcset="./images/Retina/online-courses-tab.jpg 1x, ./images/Retina/online-courses-tab@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/Retina/online-courses-mob.jpg 1x, ./images/Retina/online-courses-mob@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/Retina/online-courses-desk.jpg" alt="Online Courses" width="360">
+                            </picture>
 
                             <p class="paragraph-hidden">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker
@@ -430,7 +578,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="footer section-paddings">
         <div class="container footer-content">
 
             <div class="logo-text-footer">
@@ -477,13 +625,18 @@
             </div>
             <!-- footer button -->
             <div class="subscribe-area">
-                <p class="subscribe-area-text">Subscribe</p>
 
-                <form class="input-area-button">
-                    <label class="input-area-label" for="input-area">
-                        <input class="input-area" type="email" name="input-area" id="input-area" placeholder="E-mail">
-                    </label>
+                <div class="subscribe-area-div-btn">
+                    <div class="subscribe-area-div">
+                        <p class="subscribe-area-text">Subscribe</p>
 
+                        <form class="input-area-button">
+                            <label class="input-area-label" for="input-area">
+                                <input class="input-area" type="email" name="input-area" id="input-area"
+                                    placeholder="E-mail">
+                            </label>
+                        </form>
+                    </div>
 
                     <button class="subscribe-button" type="submit">
                         Subscribe
@@ -493,7 +646,7 @@
                     </button>
 
 
-                </form>
+                </div>
 
             </div>
 
@@ -502,7 +655,7 @@
 
     <!-- /* =====================MODAL WINDOW================== */ -->
 
-    <div class="modal-backdrop">
+    <div class="modal-backdrop hidden">
         <div class="modal">
             <button class="modal-close-button" type="button">
                 <svg class="modal-close-icon" width="8" height="8">
